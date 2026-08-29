@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output — ship via GitHub releases, not the repo
+main.js
+*.map
+
+# Per-vault plugin settings (image folder path, etc.)
+data.json
+
+# Editor / OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

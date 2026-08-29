@@ -1,0 +1,10 @@
+{
+	"id": "arnstien-protocol",
+	"name": "Arnstien Protocol",
+	"version": "1.3.0",
+	"minAppVersion": "1.0.0",
+	"description": "Encrypts pasted images with per-image keys, stores them outside the vault, and seeds them over BitTorrent DHT while Obsidian is open.",
+	"author": "zachk",
+	"authorUrl": "",
+	"isDesktopOnly": true
+}

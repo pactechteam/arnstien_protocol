@@ -1,0 +1,87 @@
+.arnstien-encrypted-image {
+	margin: 0.75em 0;
+}
+
+.arnstien-encrypted-image-img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.arnstien-encrypted-image-loading {
+	display: flex;
+	align-items: center;
+	gap: 0.75em;
+	padding: 0.85em 1em;
+	border-radius: 6px;
+	font-size: 0.9em;
+	background-color: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+}
+
+.arnstien-download-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.6em;
+	padding: 0.85em 1em;
+	border-radius: 6px;
+	background-color: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+}
+
+.arnstien-download-label {
+	font-size: 0.9em;
+	color: var(--text-muted);
+}
+
+.arnstien-download-button {
+	cursor: pointer;
+	padding: 0.35em 0.85em;
+	border-radius: 4px;
+	border: 1px solid var(--background-modifier-border);
+	background-color: var(--interactive-normal);
+	color: var(--text-normal);
+}
+
+.arnstien-download-button:hover {
+	background-color: var(--interactive-hover);
+}
+
+.arnstien-spinner {
+	width: 1.1em;
+	height: 1.1em;
+	border: 2px solid var(--text-muted);
+	border-top-color: var(--interactive-accent);
+	border-radius: 50%;
+	flex-shrink: 0;
+	animation: arnstien-spin 0.8s linear infinite;
+}
+
+@keyframes arnstien-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.arnstien-encrypted-image-status,
+.arnstien-encrypted-image-error {
+	padding: 0.6em 0.8em;
+	border-radius: 6px;
+	font-size: 0.9em;
+}
+
+.arnstien-encrypted-image-status {
+	opacity: 0.75;
+	background-color: var(--background-secondary);
+}
+
+.arnstien-encrypted-image-error {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.6em;
+	color: var(--text-error);
+	background-color: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+}
